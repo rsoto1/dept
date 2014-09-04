@@ -24,7 +24,7 @@ class ProductsControllerTest < ActionController::TestCase
   test "should create product" do
     assert_difference('Product.count') do
       post :create, product: @update
-    end
+  end
 
     assert_redirected_to product_path(assigns(:product))
   end
@@ -51,7 +51,7 @@ class ProductsControllerTest < ActionController::TestCase
   test "should destroy product" do
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
-    end
+  end
 
     assert_redirected_to products_path
   end
